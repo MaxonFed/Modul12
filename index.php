@@ -139,7 +139,7 @@ function getGenderDescription ($array) {
  
     $countingMans = round(count($mans)*100/count($array), 1);
     $countingWomens = round(count($womens)*100/count($array), 1);
-    $countingUnknonw = round(count($unknown)*100/count($array), 1);
+    $countingUnknow = round(count($unknown)*100/count($array), 1);
 
     
  echo <<<HEREDOCLETTER
@@ -147,7 +147,7 @@ function getGenderDescription ($array) {
 ---------------------------<br>
 Мужчины - $countingMans%<br>
 Женщины - $countingWomens%<br>
-Не удалось определить - $countinUnknow%<br>
+Не удалось определить - $countingUnknow%<br>
 HEREDOCLETTER;
 };
 $genderConten = getGenderDescription($example_persons_array);
